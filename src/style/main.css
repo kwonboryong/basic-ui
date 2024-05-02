@@ -4,12 +4,11 @@
     --container-size: 940px;     
 }
 
-
 body {
     font-family: "Noto Sans KR", sans-serif;
 }
 
-.header, .visual, .main, .slogan, .footer {
+.header, .visual, .main, .slogan, .footer-inner {
     width: var(--container-size, 940px);
     margin: 0 auto;
 }
@@ -17,21 +16,33 @@ body {
 /* 헤더 */
 .header {
     background-color: yellow;
+    height: 10vh;
 }
 
 /* 비주얼 */
 .visual {
     background-color: pink;
+    height: 10vh;
 }
 
 /* 메인 */
 .main {
     background-color: skyblue;
+    height: 60vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.group {
+    border: 1px solid red;
 }
 
 /* 슬로건 */
 .slogan {
     background-color: lime;
+    height: 10vh;
 }
 
 /* 푸터 */
@@ -39,7 +50,10 @@ body {
     background-color: orange;
 }
 
-
+.footer-inner {
+    background-color: yellow;
+    height: 10vh;
+}
 
 
 
