@@ -21,3 +21,5 @@
 - 레이아웃을 위한 margin 활용
 - 구조 선택자 (nth:child)
 - float 요소 안에서 float 요소로 정의하기 (order 기능)
+- border-radius
+- position 속성 (relative, absoulte)
