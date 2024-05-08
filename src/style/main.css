@@ -2,18 +2,17 @@
   --container-size: 940px;
 }
 
-/* 기본 박스 사이징 설정 (reset 역할) */
-* *::before, *::after {
+/* 기본 박스 사이징 설정 */
+*, *::before, *::after{
   box-sizing: border-box;
 }
 
-/* 폰트, 그라이언트 배경, 배경 이미지 */
+/* 그라디언트 배경, 배경 이미지 */
 body {
   margin: 0;
   font-family: "SUIT Variable", sans-serif;
-  /* background: #ccc linear-gradient(red, green), url(/imges/bg_flower.png); */
   background-color: #ccc;
-  background-image: url(../images/bg_flower.png), linear-gradient(to bottom, #aaa 0%, #ccc 30%, #eee 50%, #fff 100%);
+  background-image:  url(/images/bg_flower.png), linear-gradient(to bottom, #aaa 0%, #ccc 30%, #eee 50%, #fff 100%);
   background-repeat: no-repeat;
   background-position: 50% 0, 0 0;
 }
@@ -44,59 +43,79 @@ body {
   left: 60px;
 }
 
-/* 애니메이션 정의 */
-@keyframes moveEffect {
+/* 비주얼 */
+@keyframes moveEffect{
   0% {
     font-size: 12px;
-    margin: 0;
+    transform: translate(0,0);
   }
-  
+
   100% {
     font-size: 24px;
-    margin: 75px 0 0 400px;
+    transform: translate(320px,75px);
   }
 }
 
-/* 애니메이션 사용 */
+@keyframes fadeEffect{
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
 .visual-text {
   font-family: Georgia, 'Times New Roman', Times, serif;
   animation-name: moveEffect;
   animation-duration: 5000ms;
   animation-fill-mode: forwards;
-  background-color: lime;
+  display: inline-block;
+  z-index: 1;
+  position: relative;
 }
 
-/* 비주얼 */
 .visual {
-  border: 1px solid transparent;
   height: 120px;
-  /* block-size: 120px; */
+  block-size: 120px;
   position: relative;
 
   /* 꽃 */
-  &::before, &::after {
+  &::before, &::after{
     content: "";
     width: inherit;
-    /* inline-size: inherit; */
+    inline-size: inherit;
     height: inherit;
-    /* block-size: inherit; */
+    block-size: inherit;
     position: absolute;
     top: 0;
     left: 0;
     background-repeat: no-repeat;
+
+    animation: fadeEffect;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
   }
 }
 
-.visual::before {
+.visual::before{
   /* z-index: 1; */
-  background-image: url(../images/ani_flower_01.png), url(../images/ani_flower_02.png);
+  background-image: url(/images/ani_flower_01.png), url(/images/ani_flower_02.png);
   background-position: 0 -10px, 600px 10px;
 }
 
-.visual::after {
-  background-image: url(../images/ani_flower_03.png), url(../images/ani_flower_04.png);
+.visual::after{
+  background-image: url(/images/ani_flower_03.png), url(/images/ani_flower_04.png);
   background-position: 300px 0, 800px 30px;
+
+  animation-delay: 2000ms;
 }
+
+
+
 
 /* 메인 콘텐츠 */
 .main {
@@ -111,8 +130,8 @@ body {
   float: left;
 }
 
-.group:nth-child(n+2) {
-    margin-left: 44px;
+.group:nth-child(n + 2) {
+  margin-left: 44px;
 }
 
 .group1 {
@@ -126,10 +145,9 @@ body {
 }
 
 .group3 {
- /* background-color: hotpink; */
- width: 190px;
+  /* background: hotpink; */
+  width: 190px;
 }
-
 
 /* 슬로건 */
 .slogan {
@@ -147,12 +165,22 @@ body {
   height: 10vh;
 }
 
-/* flex를 지원하는 웹 브라우저를 위한 스타일
-flex를 지원하면 아래 코드를 해석하겠다는 뜻 */
+/* -------------------------------------------------------------------------- */
+/*                          flex를 지원하는 웹브라우저를 위한 스타일                   */
+/* -------------------------------------------------------------------------- */
+
 @supports (display: flex) {
-    .main {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
-    }
+  .main {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+  .group:nth-child(n + 2) {
+    margin-left: 0;
+  }
+
+  .group3 {
+    order: -1;
+  }
 }
