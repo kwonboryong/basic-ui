@@ -1,5 +1,10 @@
+@import url(./theme.css);
+
 :root {
   --container-size: 940px;
+  --primary: var(--orange-200);
+  --secondary: var(--orange-100);
+  --border-primary: var(--gray-900);
 }
 
 /* 기본 박스 사이징 설정 */
@@ -10,6 +15,7 @@
 /* 그라디언트 배경, 배경 이미지 */
 body {
   margin: 0;
+  line-height: 1.15;
   font-family: "SUIT Variable", sans-serif;
   background-color: #ccc;
   background-image:  url(../images/bg_flower.png), linear-gradient(to bottom, #aaa 0%, #ccc 30%, #eee 50%, #fff 100%);
@@ -28,7 +34,7 @@ body {
 
 /* 헤더 */
 .header {
-  background-color: #fff;
+  background-color: var(--primary);
   height: 120px;
   padding: 0 28px;
   border-radius: 0 0 15px 15px;
@@ -41,6 +47,13 @@ body {
   position: absolute;
   top: 45px;
   left: 60px;
+  margin: 0;
+  font-size: 1em;
+
+  a, img {
+    /* vertical-align: top; */
+    display: block;
+  }
 }
 
 /* 텍스트 링크 모음 */
