@@ -9,14 +9,13 @@
 
 /* 폰트, 그라이언트 배경, 배경 이미지 */
 body {
+  margin: 0;
   font-family: "SUIT Variable", sans-serif;
   /* background: #ccc linear-gradient(red, green), url(/imges/bg_flower.png); */
   background-color: #ccc;
   background-image: url(../images/bg_flower.png), linear-gradient(to bottom, #aaa 0%, #ccc 30%, #eee 50%, #fff 100%);
   background-repeat: no-repeat;
   background-position: 50% 0, 0 0;
-
-
 }
 
 .header,
@@ -45,12 +44,34 @@ body {
   left: 60px;
 }
 
+/* 애니메이션 정의 */
+@keyframes moveEffect {
+  0% {
+    font-size: 12px;
+    margin: 0;
+  }
+  
+  100% {
+    font-size: 24px;
+    margin: 75px 0 0 400px;
+  }
+}
+
+/* 애니메이션 사용 */
+.visual-text {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  animation-name: moveEffect;
+  animation-duration: 5000ms;
+  animation-fill-mode: forwards;
+  background-color: lime;
+}
+
 /* 비주얼 */
 .visual {
+  border: 1px solid transparent;
   height: 120px;
   /* block-size: 120px; */
   position: relative;
-
 
   /* 꽃 */
   &::before, &::after {
