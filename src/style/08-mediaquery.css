@@ -1,0 +1,32 @@
+/* 모든 디바이스 */
+/* 모바일 디바이스 - 모바일 퍼스트 방식으로 모바일에 적용됨
+@media에서 정의되지 않은 크기에선 일반 코드가 적용됨
+*/
+body {
+  background-color: yellow;
+  
+  /* 320px 이상 640px 이하 - 모바일 */
+  @media (min-width: 320px) and (max-width: 640px) {
+    & {
+      background: orange;
+    }
+  }
+}
+
+/* 640px 이상 디바이스 - 태블릿 */
+@media (min-width: 640px) and (max-width: 800px) {
+  body {
+    background: pink;
+  }
+}
+
+/* 1024px 이상 디바이스 - 데스크탑 */
+@media (min-width: 1024px) {
+  body {
+    background: lime;
+  }
+}
+
+
+
+
