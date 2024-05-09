@@ -8,7 +8,7 @@
   --border-color: var(--gray-500);
   --radius: 3px;
   border-bottom: 1px solid #fff;
-
+  align-items: center;
   display: flex;
   flex-flow: row nowrap;
   gap: var(--spacing);
