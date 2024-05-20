@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -9,10 +10,14 @@
  */
 
  html {
+=======
+html {
+>>>>>>> ec6ceba81d64b2cc1ebbc43ad1038d101af970ee
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 
+<<<<<<< HEAD
 /* Sections
    ========================================================================== */
 
@@ -20,28 +25,37 @@
  * Remove the margin in all browsers.
  */
 
+=======
+>>>>>>> ec6ceba81d64b2cc1ebbc43ad1038d101af970ee
 body {
   margin: 0;
 }
 
+<<<<<<< HEAD
 /**
  * Render the `main` element consistently in IE.
  */
 
+=======
+>>>>>>> ec6ceba81d64b2cc1ebbc43ad1038d101af970ee
 main {
   display: block;
 }
 
+<<<<<<< HEAD
 /**
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 
+=======
+>>>>>>> ec6ceba81d64b2cc1ebbc43ad1038d101af970ee
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
 
+<<<<<<< HEAD
 /* Grouping content
    ========================================================================== */
 
@@ -50,22 +64,28 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 
+=======
+>>>>>>> ec6ceba81d64b2cc1ebbc43ad1038d101af970ee
 hr {
   box-sizing: content-box; /* 1 */
   height: 0; /* 1 */
   overflow: visible; /* 2 */
 }
 
+<<<<<<< HEAD
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 
+=======
+>>>>>>> ec6ceba81d64b2cc1ebbc43ad1038d101af970ee
 pre {
   font-family: monospace, monospace; /* 1 */
   font-size: 1em; /* 2 */
 }
 
+<<<<<<< HEAD
 /* Text-level semantics
    ========================================================================== */
 
@@ -73,35 +93,46 @@ pre {
  * Remove the gray background on active links in IE 10.
  */
 
+=======
+>>>>>>> ec6ceba81d64b2cc1ebbc43ad1038d101af970ee
 a {
   background-color: transparent;
 }
 
+<<<<<<< HEAD
 /**
  * 1. Remove the bottom border in Chrome 57-
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 
+=======
+>>>>>>> ec6ceba81d64b2cc1ebbc43ad1038d101af970ee
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
   text-decoration: underline dotted; /* 2 */
 }
 
+<<<<<<< HEAD
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
 
+=======
+>>>>>>> ec6ceba81d64b2cc1ebbc43ad1038d101af970ee
 b,
 strong {
   font-weight: bolder;
 }
 
+<<<<<<< HEAD
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 
+=======
+>>>>>>> ec6ceba81d64b2cc1ebbc43ad1038d101af970ee
 code,
 kbd,
 samp {
@@ -109,19 +140,25 @@ samp {
   font-size: 1em; /* 2 */
 }
 
+<<<<<<< HEAD
 /**
  * Add the correct font size in all browsers.
  */
 
+=======
+>>>>>>> ec6ceba81d64b2cc1ebbc43ad1038d101af970ee
 small {
   font-size: 80%;
 }
 
+<<<<<<< HEAD
 /**
  * Prevent `sub` and `sup` elements from affecting the line height in
  * all browsers.
  */
 
+=======
+>>>>>>> ec6ceba81d64b2cc1ebbc43ad1038d101af970ee
 sub,
 sup {
   font-size: 75%;
@@ -138,6 +175,7 @@ sup {
   top: -0.5em;
 }
 
+<<<<<<< HEAD
 /* Embedded content
    ========================================================================== */
 
@@ -145,10 +183,13 @@ sup {
  * Remove the border on images inside links in IE 10.
  */
 
+=======
+>>>>>>> ec6ceba81d64b2cc1ebbc43ad1038d101af970ee
 img {
   border-style: none;
 }
 
+<<<<<<< HEAD
 /* Forms
    ========================================================================== */
 
@@ -157,6 +198,8 @@ img {
  * 2. Remove the margin in Firefox and Safari.
  */
 
+=======
+>>>>>>> ec6ceba81d64b2cc1ebbc43ad1038d101af970ee
 button,
 input,
 optgroup,
@@ -168,6 +211,7 @@ textarea {
   margin: 0; /* 2 */
 }
 
+<<<<<<< HEAD
 /**
  * Show the overflow in IE.
  * 1. Show the overflow in Edge.
@@ -192,11 +236,26 @@ select { /* 1 */
  * Correct the inability to style clickable types in iOS and Safari.
  */
 
+=======
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+>>>>>>> ec6ceba81d64b2cc1ebbc43ad1038d101af970ee
 button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button;
+<<<<<<< HEAD
   appearance: button;
   /* 경고 떠서 추가한 부분 */
 }
@@ -205,6 +264,10 @@ button,
  * Remove the inner border and padding in Firefox.
  */
 
+=======
+}
+
+>>>>>>> ec6ceba81d64b2cc1ebbc43ad1038d101af970ee
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
@@ -213,10 +276,13 @@ button::-moz-focus-inner,
   padding: 0;
 }
 
+<<<<<<< HEAD
 /**
  * Restore the focus styles unset by the previous rule.
  */
 
+=======
+>>>>>>> ec6ceba81d64b2cc1ebbc43ad1038d101af970ee
 button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
@@ -224,14 +290,18 @@ button:-moz-focusring,
   outline: 1px dotted ButtonText;
 }
 
+<<<<<<< HEAD
 /**
  * Correct the padding in Firefox.
  */
 
+=======
+>>>>>>> ec6ceba81d64b2cc1ebbc43ad1038d101af970ee
 fieldset {
   padding: 0.35em 0.75em 0.625em;
 }
 
+<<<<<<< HEAD
 /**
  * 1. Correct the text wrapping in Edge and IE.
  * 2. Correct the color inheritance from `fieldset` elements in IE.
@@ -239,6 +309,8 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 
+=======
+>>>>>>> ec6ceba81d64b2cc1ebbc43ad1038d101af970ee
 legend {
   box-sizing: border-box; /* 1 */
   color: inherit; /* 2 */
@@ -248,42 +320,55 @@ legend {
   white-space: normal; /* 1 */
 }
 
+<<<<<<< HEAD
 /**
  * Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
 
+=======
+>>>>>>> ec6ceba81d64b2cc1ebbc43ad1038d101af970ee
 progress {
   vertical-align: baseline;
 }
 
+<<<<<<< HEAD
 /**
  * Remove the default vertical scrollbar in IE 10+.
  */
 
+=======
+>>>>>>> ec6ceba81d64b2cc1ebbc43ad1038d101af970ee
 textarea {
   overflow: auto;
 }
 
+<<<<<<< HEAD
 /**
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
 
+=======
+>>>>>>> ec6ceba81d64b2cc1ebbc43ad1038d101af970ee
 [type="checkbox"],
 [type="radio"] {
   box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
 }
 
+<<<<<<< HEAD
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
 
+=======
+>>>>>>> ec6ceba81d64b2cc1ebbc43ad1038d101af970ee
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
+<<<<<<< HEAD
 /**
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
@@ -300,20 +385,31 @@ textarea {
  * Remove the inner padding in Chrome and Safari on macOS.
  */
 
+=======
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+>>>>>>> ec6ceba81d64b2cc1ebbc43ad1038d101af970ee
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
+<<<<<<< HEAD
 /**
  * 1. Correct the inability to style clickable types in iOS and Safari.
  * 2. Change font properties to `inherit` in Safari.
  */
 
+=======
+>>>>>>> ec6ceba81d64b2cc1ebbc43ad1038d101af970ee
 ::-webkit-file-upload-button {
   -webkit-appearance: button; /* 1 */
   font: inherit; /* 2 */
 }
 
+<<<<<<< HEAD
 /* Interactive
    ========================================================================== */
 
@@ -321,18 +417,24 @@ textarea {
  * Add the correct display in Edge, IE 10+, and Firefox.
  */
 
+=======
+>>>>>>> ec6ceba81d64b2cc1ebbc43ad1038d101af970ee
 details {
   display: block;
 }
 
+<<<<<<< HEAD
 /*
  * Add the correct display in all browsers.
  */
 
+=======
+>>>>>>> ec6ceba81d64b2cc1ebbc43ad1038d101af970ee
 summary {
   display: list-item;
 }
 
+<<<<<<< HEAD
 /* Misc
    ========================================================================== */
 
@@ -340,10 +442,13 @@ summary {
  * Add the correct display in IE 10+.
  */
 
+=======
+>>>>>>> ec6ceba81d64b2cc1ebbc43ad1038d101af970ee
 template {
   display: none;
 }
 
+<<<<<<< HEAD
 /**
  * Add the correct display in IE 10.
  */
@@ -351,3 +456,8 @@ template {
 [hidden] {
   display: none;
 }
+=======
+[hidden] {
+  display: none;
+}
+>>>>>>> ec6ceba81d64b2cc1ebbc43ad1038d101af970ee

@@ -1,19 +1,39 @@
 /* 텍스트 링크 모음 */
+<<<<<<< HEAD
 .member-service {
   --font-size: 0.875rem;
 
+=======
+:root{
+  --base-font-famaily: "SUIT Variable", sans-serif; 
+}
+
+/* 컴포넌트 */
+.member-service {
+  --font-size: 0.875rem;
+  
+  font-family: var(--base-font-famaily);
+>>>>>>> ec6ceba81d64b2cc1ebbc43ad1038d101af970ee
   font-size: 0;
   list-style-type: none;
   padding-inline-start: 0;
   margin: 0;
   text-align: right;
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> ec6ceba81d64b2cc1ebbc43ad1038d101af970ee
   li {
     display: inline-block;
     margin: 0;
     font-size: var(--font-size);
+<<<<<<< HEAD
 
     /* 링크 클릭 면적을 넓혀서 사용자 편의성을 향상시켜야 함 */
+=======
+    
+>>>>>>> ec6ceba81d64b2cc1ebbc43ad1038d101af970ee
     a {
       display: inherit;
       padding: 8px 8px 8px 4px;
@@ -24,6 +44,7 @@
       text-decoration: none;
     }
 
+<<<<<<< HEAD
     /* a:link {
       color: green;
     }
@@ -38,6 +59,22 @@
 
     a:hover a:focus {
       color: yellow;
+=======
+    /* a:link{
+      color: green;
+    }
+
+    a:visited{
+      color: silver;
+    }
+
+    a:active{
+      color: red;
+    }
+
+    a:hover, a:focus{
+      color: yellow
+>>>>>>> ec6ceba81d64b2cc1ebbc43ad1038d101af970ee
     } */
   }
 }

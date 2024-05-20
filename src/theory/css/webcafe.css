@@ -1,0 +1,53 @@
+@import url(/style/reset.css);
+@import url(/style/base.css);
+@import url(/theory/css/grid.css);
+@import url(/components/css/logo.css);
+@import url(/components/css/burger-button.css);
+@import url(/components/css/menu.css);
+@import url(/components/css/iframe.css);
+
+/* 웹카페 반응형 레이아웃 */
+.container{
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1.25rem;
+  
+  .header, .menu, .main, .footer{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .main{
+    flex: 1 0 auto;
+    gap: 24px;
+  }
+}
+
+
+/* 추천 서적 - book */
+.book{
+
+}
+
+
+/* 새소식 */
+.news{
+
+}
+
+/* 게시판 */
+.board{
+
+}
+
+/* 인기사이트 */
+.favorite{
+
+}
+
+/* 트위터 */
+.twitter{
+
+}

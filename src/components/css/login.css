@@ -8,10 +8,18 @@
   --border-color: var(--gray-500);
   --radius: 3px;
   border-bottom: 1px solid #fff;
+<<<<<<< HEAD
   align-items: center;
   display: flex;
   flex-flow: row nowrap;
   gap: var(--spacing);
+=======
+
+  display: flex;
+  flex-flow: row nowrap;
+  gap: var(--spacing);
+  align-items: center;
+>>>>>>> ec6ceba81d64b2cc1ebbc43ad1038d101af970ee
 
   label{
     white-space: nowrap;
@@ -37,6 +45,11 @@
   }
 }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> ec6ceba81d64b2cc1ebbc43ad1038d101af970ee
 /* button 컴포넌트 */
 .button{
   --bg-color:var(--orange-200);
@@ -51,6 +64,11 @@
   white-space: nowrap;
 }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> ec6ceba81d64b2cc1ebbc43ad1038d101af970ee
 /* 링크 텍스트 컴포넌트 (아이콘 유형) */
 .icon-link{
   --color: var(--orange-200);
@@ -62,6 +80,10 @@
   }
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> ec6ceba81d64b2cc1ebbc43ad1038d101af970ee
 /* 로그인 */
 .login{
   /* 로그인 변수 */
@@ -127,4 +149,11 @@
     flex-flow: row nowrap;
     justify-content: space-between;
   }
+<<<<<<< HEAD
 }
+=======
+}
+
+
+
+>>>>>>> ec6ceba81d64b2cc1ebbc43ad1038d101af970ee

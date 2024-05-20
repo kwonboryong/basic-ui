@@ -1,0 +1,29 @@
+@import url(default.css);
+
+/* 비트맵 이미지 */
+.rwd-img{
+  max-width: 100%;
+  height: auto;
+}
+
+/* 벡터 이미지 */
+.rwd-svg{
+  width: 100%;
+  height: auto;
+}
+
+/* 이미지 컴포넌트 */
+figure{
+  background: yellow;
+  margin: 0;
+
+   img{
+    max-width: 100%;
+   }
+}
+
+/* 레이아웃 */
+.box{
+  width: 50%;
+  inline-size: 50%;
+}

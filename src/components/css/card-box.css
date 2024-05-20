@@ -21,6 +21,7 @@ h1{
   }
 }
 
+<<<<<<< HEAD
 @media (min-width: 640px){
   .container{
     grid-template-columns: 1fr 1fr;
@@ -33,4 +34,10 @@ h1{
     margin: 0 auto;
     grid-template-columns: 1fr 1fr 1fr;
   }
+=======
+@media (min-width: 640px) {
+  .container{
+    grid-template-columns: 1fr 1fr;
+  }
+>>>>>>> ec6ceba81d64b2cc1ebbc43ad1038d101af970ee
 }

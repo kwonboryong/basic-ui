@@ -1,5 +1,9 @@
 /* Color styles */
+<<<<<<< HEAD
 :root {
+=======
+:root{
+>>>>>>> ec6ceba81d64b2cc1ebbc43ad1038d101af970ee
   --white: #FFFFFF;
   --black: #000000;
   --orange-200: #ED552F;
@@ -14,7 +18,18 @@
   --gray-700: #7A7A7A;
   --gray-800: #525252;
   --gray-900: #292929;
+<<<<<<< HEAD
   --accent-blue: #296897;
   --accent-yellow: #FFFF00;
   --accent-green: #447231;
 }
+=======
+  --blue: #296897;
+  --yellow: #FFFF00;
+  --green: #447231;
+  --light-blue: #9EA7CD;
+  --dark-blue: #24388D; 
+}
+
+
+>>>>>>> ec6ceba81d64b2cc1ebbc43ad1038d101af970ee
