@@ -1,5 +1,10 @@
 @import url(default.css);
 
+/* 레이아웃 */
+.box{
+  width: 50%;
+}
+
 /* 비트맵 이미지 */
 .rwd-img{
   max-width: 100%;
@@ -20,10 +25,4 @@ figure{
    img{
     max-width: 100%;
    }
-}
-
-/* 레이아웃 */
-.box{
-  width: 50%;
-  inline-size: 50%;
 }

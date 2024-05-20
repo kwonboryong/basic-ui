@@ -14,15 +14,14 @@
     <!-- figure 요소 -->
     <div class="box">
       <figure class="video-container">
-        <video controls poster="./../media/poster.jpg" class="video">
+        <video class="video" controls poster="./../media/poster.jpg">
+          <!-- 다중 미디어 자원(다양한 버전에서 지원) -->
           <source src="./../media/google-developer-stories.webm" type="video/webm" />
           <source src="./../media/stories.mp4" type="video/mp4" />
+          <!-- 자막 -->
           <track src="./../media/stories-en.vtt" kind="captions" srclang="en" label="English" />
         </video>   
       </figure>
     </div>
-
-
-
   </body>
 </html>

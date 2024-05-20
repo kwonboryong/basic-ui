@@ -6,6 +6,7 @@
   position: relative;
   /* z-index: 3; */
 }
+
 .box2 {
   background-color: pink;
   border: 1px solid blue;
@@ -16,6 +17,7 @@
   left: 20px;
   z-index: 10;
 }
+
 .box3 {
   background-color: salmon;
   border: 1px solid green;
@@ -26,7 +28,7 @@
   /* z-index: 6; */
 }
 
-.box-inner1{
+.box-inner1 {
   background: red;
   position: relative;
   z-index: 20;
