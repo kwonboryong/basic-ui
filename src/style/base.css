@@ -9,21 +9,12 @@ body *, body *::before, body *::after{
 body{
   font-family: var(--base-font-family);
   line-height: 1.15;
-<<<<<<< HEAD
-=======
-  margin: 0;
->>>>>>> ec6ceba81d64b2cc1ebbc43ad1038d101af970ee
 }
 
 *:focus{
   outline: 0;
 }
 
-<<<<<<< HEAD
 *:focus-visible {
   outline: 2px solid green;
-=======
-*:focus-visible{
-  outline: 2px solid #24388D;
->>>>>>> ec6ceba81d64b2cc1ebbc43ad1038d101af970ee
 }

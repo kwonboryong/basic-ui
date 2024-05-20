@@ -1,26 +1,14 @@
-<<<<<<< HEAD
 .sr-only {
   background-color: rgb(255, 30, 0);
-=======
-.sr-only{
->>>>>>> ec6ceba81d64b2cc1ebbc43ad1038d101af970ee
   position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
-<<<<<<< HEAD
   clip: rect(0, 0, 0, 0);
-=======
-  clip: rect(0,0,0,0);
->>>>>>> ec6ceba81d64b2cc1ebbc43ad1038d101af970ee
   clip-path: polygon(0 0, 0 0, 0 0);
   overflow: hidden;
   padding: 0;
   white-space: nowrap;
   border-width: 0;
-<<<<<<< HEAD
 }
 
-=======
-}
->>>>>>> ec6ceba81d64b2cc1ebbc43ad1038d101af970ee
