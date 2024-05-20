@@ -1,0 +1,122 @@
+@import url(/style/reset.css);
+@import url(/style/base.css);
+@import url(/theory/css/grid.css);
+
+/* 임시 레이아웃 */
+body{
+  margin-top: 50px;
+}
+
+/* 웹카페 반응형 레이아웃 */
+.container{
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  
+  .header, .navigation, .footer{
+    height: 100px;
+    block-size: 100px;
+    width: 100%;
+    inline-size: 100%;
+  }
+
+  .main{
+    max-width: 100%;
+    width: 90%;
+    flex: 1 0 auto;
+    gap: 24px;
+  }
+}
+.header{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: end;
+}
+/* 햄버거 버튼 */
+.burger-button{
+  margin: 100px;
+  background: red;
+  border: 0;
+  padding: 0;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  
+  span{
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    border-radius: 20px;
+    transition: all 200ms;
+  }
+
+  .burger-bar-top{
+    top: 0;
+  }
+  .burger-bar-middle{
+    top: 50%;
+    translate: 0 -50%;
+  }
+  .burger-bar-bottom{
+    top: 100%;
+    translate: 0 -100%;
+  }
+}
+
+/* is-actvie 클래스가 있을 때 */
+.burger-button.is-active{
+  overflow: hidden;
+
+  span{
+
+  }
+
+  .burger-bar-top, .burger-bar-bottom{
+    top: 50%;
+    translate: 0 -50%;
+  }
+
+  .burger-bar-top{
+    rotate: 45deg;
+
+  }
+
+  .burger-bar-middle{
+    translate: -100% -50%;
+  }
+
+  .burger-bar-bottom{
+    rotate: -45deg;
+  }
+}
+
+
+
+
+
+/* transition - 애니메이션 */
+/* 내비게이션 */
+.menu{
+  position: fixed;
+  background: orange;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 100vh;
+  translate: -100% 0;
+  /* transition-property: translate, background;
+  transition-duration: 2000ms, 2000ms;
+  transition-delay: 0ms, 4000ms;
+  transition-timing-function: ease-in-out, ease-in-out; */
+  /* transition: translate 2000ms 0ms ease-in-out, 
+              background 2000ms 2000ms ease-in-out; */
+  transition: all 0.2s;
+
+  &.is-active{
+    translate: 0 0;
+    background: purple;
+  }
+}
