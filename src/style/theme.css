@@ -1,5 +1,5 @@
 /* Color styles */
-:root {
+:root{
   --white: #FFFFFF;
   --black: #000000;
   --orange-200: #ED552F;
@@ -14,7 +14,9 @@
   --gray-700: #7A7A7A;
   --gray-800: #525252;
   --gray-900: #292929;
-  --accent-blue: #296897;
-  --accent-yellow: #FFFF00;
-  --accent-green: #447231;
+  --blue: #296897;
+  --yellow: #FFFF00;
+  --green: #447231;
+  --light-blue: #9EA7CD;
+  --dark-blue: #24388D; 
 }

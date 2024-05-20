@@ -16,6 +16,10 @@ ul, ol{
   margin: 0;
 }
 
+p, figure{
+  margin: 0;
+}
+
 fieldset{
   border: 0;
   margin: 0;

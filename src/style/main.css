@@ -1,10 +1,5 @@
-@import url(./theme.css);
-
 :root {
   --container-size: 940px;
-  --primary: var(--orange-200);
-  --secondary: var(--orange-100);
-  --border-primary: var(--gray-900);
 }
 
 /* 기본 박스 사이징 설정 */
@@ -18,7 +13,7 @@ body {
   line-height: 1.15;
   font-family: "SUIT Variable", sans-serif;
   background-color: #ccc;
-  background-image:  url(../images/bg_flower.png), linear-gradient(to bottom, #aaa 0%, #ccc 30%, #eee 50%, #fff 100%);
+  background-image:  url(/images/bg_flower.png), linear-gradient(to bottom, #aaa 0%, #ccc 30%, #eee 50%, #fff 100%);
   background-repeat: no-repeat;
   background-position: 50% 0, 0 0;
 }
@@ -34,7 +29,7 @@ body {
 
 /* 헤더 */
 .header {
-  background-color: var(--primary);
+  background-color: #fff;
   height: 120px;
   padding: 0 28px;
   border-radius: 0 0 15px 15px;
@@ -50,30 +45,32 @@ body {
   margin: 0;
   font-size: 1em;
 
-  a, img {
-    /* vertical-align: top; */
+  a, img{
     display: block;
+    /* 인라인 상자 정렬 */
+    /* vertical-align: middle; */
   }
 }
 
 /* 텍스트 링크 모음 */
 .member-service {
   --spacing: 8px;
+  
   translate: var(--spacing, 8px) 0;
   font-size: 0;
   list-style-type: none;
   padding-inline-start: 0;
   margin: 0;
   text-align: right;
+  
   li {
     display: inline-block;
     margin: 0;
     font-size: 0.875rem;
-
-    /* 링크 클릭 면적을 넓혀서 사용자 편의성을 향상시켜야 함 */
+    
     a {
       display: inherit;
-      padding: var(--spacing, 8px) 8px 4px;
+      padding: 8px var(--spacing, 8px) 8px 4px;
       font-variant: small-caps;
       margin: 0;
       text-transform: uppercase;
@@ -84,37 +81,27 @@ body {
 }
 
 
-/* 비주얼 애니메이션 */
-@keyframes moveEffect{
-  0% {
-    font-size: 12px;
-    transform: translate(0,0);
-  }
 
-  100% {
+/* 비주얼 */
+@keyframes moveEffect{
+  0%{
+    font-size: 12px;
+    translate: 0 0;
+
+  }
+  100%{
     font-size: 24px;
-    transform: translate(320px,75px);
+    translate: 320px 75px;
   }
 }
 
 @keyframes fadeEffect{
-  0% {
-    opacity: 0;
-  }
-
-  100% {
+  0%{
     opacity: 1;
   }
-}
-
-.visual-text {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  animation-name: moveEffect;
-  animation-duration: 5000ms;
-  animation-fill-mode: forwards;
-  display: inline-block;
-  z-index: 1;
-  position: relative;
+  100%{
+    opacity: 0;
+  }
 }
 
 .visual {
@@ -122,36 +109,44 @@ body {
   block-size: 120px;
   position: relative;
 
-  /* 꽃 */
-  &::before, &::after{
-    content: "";
-    width: inherit;
-    inline-size: inherit;
-    height: inherit;
-    block-size: inherit;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-repeat: no-repeat;
-
-    animation: fadeEffect;
-    animation-duration: 4000ms;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-  }
 }
 
+.visual::before, .visual::after{
+  animation-name: fadeEffect;
+  animation-duration: 4000ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  content: "";
+  width: inherit;
+  inline-size: inherit;
+  height: inherit;
+  block-size: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+}
 .visual::before{
   /* z-index: 1; */
-  background-image: url(../images/ani_flower_01.png), url(../images/ani_flower_02.png);
+  background-image: url(/images/ani_flower_01.png), url(/images/ani_flower_02.png);
   background-position: 0 -10px, 600px 10px;
 }
 
 .visual::after{
-  background-image: url(../images/ani_flower_03.png), url(../images/ani_flower_04.png);
+  background-image: url(/images/ani_flower_03.png), url(/images/ani_flower_04.png);
   background-position: 300px 0, 800px 30px;
-
   animation-delay: 2000ms;
+}
+
+
+.visual-text{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  animation-name: moveEffect;
+  animation-duration: 5000ms;
+  animation-fill-mode: forwards;
+  display: inline-block;
+  z-index: 1;
+  position: relative;
 }
 
 
