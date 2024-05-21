@@ -1,0 +1,14 @@
+.menu{
+  background: yellow;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+
+  .menu__list{
+    border: 1px solid red;
+  }
+
+  @at-root .navigation-item{
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,10 @@
+$variable: '글로벌 변수';
+
+.content {
+  $variable: '글로벌(global) 변수' !global;
+  value: $variable;
+}
+
+.sidebar {
+  value: $variable; // '글로벌(global) 변수'
+}
