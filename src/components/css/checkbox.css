@@ -2,62 +2,73 @@
 @import url(/style/theme.css);
 @import url(/style/base.css);
 
-
 body, h1{
   margin: 50px;
 }
 
+/* 체크박스 컴포넌트 */
 .form-checkbox{
   position: relative;
 
-  input{
+  input {
     position: absolute;
-    appearance: none;
+    appearance: none; /* 기존 에이전트 스타일 무효 */
     width: 12px;
     height: 12px;
   }
+  
 
-  label{
+  /* input 스타일 커스텀
+  (input을 label 이미지로 덮어씀) */
+  label {
     background: url(/components/images/un-check.svg) no-repeat 0 0 /contain;
     padding-left: 25px;
   }
 
-  input:checked + label{
+  /* input이 체크된 스타일 커스텀 */
+  input:checked + label {
     background-image: url(/components/images/checked.svg);
   }
 
-  input:focus{
+
+  /* tab 키로 포커스 시 스타일 표시하지 않기 위해 */
+  input:focus {
     outline: none;
     /* outline-offset: 4px; */
   }
   
-  input:focus-visible{
+  input:focus-visible {
     outline: 2px solid red;
   }
 }
 
 
+/* Tooltip 컴포넌트 */
 .tooltip{
   margin-top: 50px;
 
+  /* 아이콘 */
   .tooltip-icon{
-    display: flex;
     width: 20px;
     height: 20px;
-    justify-content: center;
-    align-items: center;
+    padding: 0.25em;
     border: 2px solid #000;
     border-radius: 50%;
-    padding: 0.25em;
     font-size: 10px;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* 아이콘에 마우스(tab 키) 오버 시 내용 보이기 */
     &:hover + .tooltip-content, &:focus + .tooltip-content{
       display: block;
     }
   }
 
+  /* 내용 */
   .tooltip-content{
-    display: none;
+    display: none; /* 기존엔 숨겨둠 */
     margin: 10px;
     background: rgba(0,0,0,0.5);
     padding: 15px;

@@ -2,51 +2,59 @@
 @import url(/style/theme.css);
 @import url(/style/base.css);
 
-body{
+body {
   margin: 100px;
   background-color: #000;
   color: #fff;
 }
 
 
-.accordion{
+.accordion {
   background-color: #212121;
   color: #fff;
 
-  details svg{
-    transition: all 200ms;
-  }
-  
-  details[open] svg{
+  /* svg 회전 효과 */
+  details[open] svg {
     rotate: 45deg;
   }
 
-  summary{
+  /* svg 회전 애니메이션 */
+  details svg {
+    transition: all 200ms;
+  }
+
+
+  /* 제목 */
+  summary {
     padding: 1.5rem;
     font-size: 1.25rem;
     border-bottom: 2px solid #000;
+    
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
 
-    &::marker{
+    &::marker {
       content: "";
     }
   }
   
-  div{
+
+  /* 내용 */
+  div {
     padding: 2rem 1.5rem;
+
     display: flex;
     flex-flow: column nowrap;
     gap: 1rem;
   }
 
-  p{
+  p {
     line-height: 1.5;
   }
 
-  a{
+  a {
     text-decoration: underline;
   }
 }
